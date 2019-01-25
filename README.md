@@ -11,10 +11,12 @@ IP Address :18.216.105.17.xip.io
 
 2.Create instance and set the platform to _OS ONLY_ and blueprint to _Ubuntu_
 
-3.Add the SSH Keys(123,2200).
+3.Add the SSH Keys: 123, 2200.
 
 ### Step 2: Server Configuration ###
+1.Move the public key file to .ssh folder at the root of Finder '.pem'.
 
+2.To make the public key secure and usable, run 'chmod 600 ~/.ssh/YourAWSKey.pem' in terminal
 
 
 
