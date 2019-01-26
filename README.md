@@ -93,6 +93,7 @@ application.secret_key = 'supersecretkey'`
 12.Configure and enable vertual holst
 	1.`sudo nano /etc/apache2/sites-available/catalog.conf`
 	2.Replace with this code
+    
     	`<VirtualHost *:80>
         ServerName [YOUR PUBLIC IP ADDRESS]
         ServerAlias [YOUR AMAZON LIGHTSAIL HOST NAME]
