@@ -17,11 +17,11 @@ IP Address :18.216.105.17.xip.io
 ### Step 2: Server Configuration ###
 1.Move the downloaded public key file `.pem` to .ssh folder at the root of Finder .
 
-2.To make the public key secure and usable, run ` chmod 600 ~/.ssh/YourAWSKey.pem ` in terminal
-3.log to Amazon Lightsail Server using the public key ` ssh -i ~/.ssh/AWSKey.pem ubuntu@[ip] `
+2.To make the public key secure and usable, run ` chmod 600 ~/.ssh/YourAWSKey.pem ` in terminal.
+3.log to Amazon Lightsail Server using the public key ` ssh -i ~/.ssh/AWSKey.pem ubuntu@[ip] `.
 4.Switch to user root `sudo su-`.
-5.Add grader user `sudo adduser grader`
-6.Create new file in _sudoers directory_ and add ALL=(ALL:ALL) ALL
+5.Add grader user `sudo adduser grader`.
+6.Create new file in _sudoers directory_ and add ALL=(ALL:ALL) ALL.
 7.update packages and install finger package
 - `sudo apt-get update`
 - `sudo apt-get upgrade`
@@ -93,7 +93,7 @@ application.secret_key = 'supersecretkey'`
 12.Configure and enable vertual holst
 	1.`sudo nano /etc/apache2/sites-available/catalog.conf`
 	2.Replace with this code
-    
+
     	`<VirtualHost *:80>
         ServerName [YOUR PUBLIC IP ADDRESS]
         ServerAlias [YOUR AMAZON LIGHTSAIL HOST NAME]
